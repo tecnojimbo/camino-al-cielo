@@ -1,18 +1,156 @@
-    <section class="church-verse" aria-labelledby="lema-title">
-      <div class="verse-glow" aria-hidden="true"></div>
-      <div class="verse-inner reveal">
-        <div class="verse-emblem">
-          <p>Una iglesia de</p>
-          <div class="emblem-words" aria-label="Fe, amor y esperanza">
-            <strong>FE</strong><i>•</i><strong>AMOR</strong><i>•</i><strong>ESPERANZA</strong>
-          </div>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a3f">
+  <meta name="description" content="Misión Cristiana Camino al Cielo en Guayaquil. Conoce nuestros horarios de cultos, ministerios y ubicación.">
+  <title>Misión Cristiana Camino al Cielo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071a3f'/%3E%3Cpath d='M32 10v40M20 22h24' stroke='%23eabf67' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img class="official-logo" src="logo-camino-al-cielo.png" alt="Logo de Misión Cristiana Camino al Cielo">
+      <span><strong>Misión Cristiana</strong><small>Camino al Cielo</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Abrir menú</span></button>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a class="active" href="index.html">Inicio</a><a href="historia.html">Historia</a><a href="creemos.html">Creemos</a><a href="pastor.html">Pastor</a><a href="ministerios.html">Ministerios</a><a href="galeria.html">Galería</a>
+      <a class="nav-cta" href="#ubicacion">Visítanos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="camino-al-cielo-hero.png" alt="Sendero iluminado que asciende hacia un cielo radiante entre montañas">
+      <div class="hero-shade"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Bienvenidos a casa</p>
+        <h1 id="hero-title">Hay un camino.<br><em>Hay esperanza.</em></h1>
+        <p class="hero-copy">Somos Misión Cristiana Camino al Cielo: una comunidad de fe en Guayaquil donde cada persona puede crecer, servir y caminar acompañada.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#horarios">Ver horarios</a>
+          <a class="button ghost" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+          <a class="button live" href="https://www.facebook.com/misioncristianacaminoalcielo" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span> Ver en vivo</a>
         </div>
-        <figure class="verse-quote">
-          <span class="verse-mark" aria-hidden="true">“</span>
-          <figcaption class="section-kicker">Versículo lema de la iglesia</figcaption>
-          <blockquote id="lema-title">¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!</blockquote>
-          <cite>Salmos 133:1 <span>RVR1960</span></cite>
-        </figure>
+      </div>
+      <a class="scroll-cue" href="#nosotros" aria-label="Continuar hacia la siguiente sección"><span></span></a>
+    </section>
+
+    <section class="welcome section" id="nosotros">
+      <div class="section-kicker">Una comunidad para ti</div>
+      <div class="welcome-grid">
+        <h2>Una familia unida,<br><span>una iglesia unida.</span></h2>
+        <div>
+          <p class="lead">Creemos en una fe que se vive en comunidad: compartiendo la Palabra, orando juntos y sirviendo con amor.</p>
+          <p>En Camino al Cielo encontrarás un lugar para acercarte a Dios y crecer junto a personas de todas las edades. Las puertas están abiertas para ti y tu familia.</p>
+          <a class="text-link" href="#ministerios">Conoce nuestros ministerios <span aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
 
+    <section class="identity section" id="identidad">
+      <div class="section-heading">
+        <div><p class="section-kicker">Nuestra identidad</p><h2>Una historia de fe,<br>familia y servicio.</h2></div>
+        <p>Conoce las raíces, las convicciones y el llamado que dan vida a Misión Cristiana Camino al Cielo.</p>
+      </div>
+      <div class="identity-grid">
+        <a class="identity-card history-card" href="historia.html">
+          <span class="card-number">01</span>
+          <p class="card-label">Nuestra historia</p>
+          <h3>Un llamado que comenzó en 2009</h3>
+          <p>Después de un tiempo de oración y confirmación junto a su familia, el pastor Luis Sarmiento respondió al llamado de abrir una nueva obra en Guayaquil. Así nació una congregación dedicada a compartir el evangelio, adorar a Dios y caminar unida.</p><span class="card-link">Descubrir la historia →</span>
+        </a>
+        <a class="identity-card belief-card" href="creemos.html">
+          <span class="card-number">02</span>
+          <p class="card-label">Lo que creemos</p>
+          <h3>Cristo salva, santifica y transforma</h3>
+          <p>Creemos en un Dios único, vivo y verdadero; en Jesucristo como Salvador y Señor; en la salvación por gracia y misericordia; y en una familia creada por Dios para vivir en amor y unidad.</p><span class="card-link">Conocer nuestra fe →</span>
+        </a>
+        <a class="identity-card pastor-card" href="pastor.html">
+          <span class="card-number">03</span>
+          <p class="card-label">Nuestro pastor</p>
+          <h3>Pastor Luis Sarmiento</h3>
+          <p>Recibió a Cristo en 1962 y respondió al llamado ministerial formándose en el Instituto Bíblico Bereano y el Seminario Bíblico Alianza. Su trayectoria refleja una vida dedicada a la enseñanza de la Palabra y al servicio de la iglesia.</p><span class="card-link">Leer su trayectoria →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="schedule section" id="horarios">
+      <div class="section-heading light">
+        <div><p class="section-kicker">Nos reunimos cada semana</p><h2>Horarios de cultos</h2></div>
+        <p>Siempre hay un momento para encontrarnos, orar y crecer juntos.</p>
+      </div>
+      <div class="schedule-grid">
+        <article><h3>Lunes</h3><div class="event"><span>08:00–09:30</span><p>Tiempo de Oración</p></div><div class="event"><span>20:00–21:00</span><p>Ministerio de Caballeros</p></div></article>
+        <article><h3>Miércoles</h3><div class="event"><span>08:00–09:30</span><p>Tiempo de Oración</p></div><div class="event"><span>20:00–21:30</span><p>Crecimiento Cristiano</p></div></article>
+        <article><h3>Jueves</h3><div class="event"><span>17:00–18:00</span><p>Ministerio de Damas</p></div></article>
+        <article><h3>Viernes</h3><div class="event"><span>08:00–09:30</span><p>Tiempo de Oración</p></div><div class="event"><span>20:00–21:30</span><p>Testimonio y Oración</p></div></article>
+        <article><h3>Sábado</h3><div class="event"><span>14:30–16:00</span><p>Ministerio de Niños</p></div><div class="event"><span>18:30–20:30</span><p>Ministerio de Jóvenes</p></div></article>
+        <article class="featured"><h3>Domingo</h3><div class="event"><span>09:00–10:30</span><p>Culto Devocional</p></div><div class="event"><span>11:00–12:30</span><p>Culto Devocional<br><strong class="event-secondary">Escuela Dominical</strong></p></div></article>
+      </div>
+    </section>
+
+    <section class="ministries section" id="ministerios">
+      <div class="section-heading">
+        <div><p class="section-kicker">Crecer y servir</p><h2>Un lugar para cada persona</h2></div>
+        <p>Nuestros ministerios acompañan cada etapa de la vida y ayudan a poner los dones al servicio de Dios.</p>
+      </div>
+      <div class="ministry-list">
+        <article><span>01</span><div class="ministry-icon">◆</div><p class="ministry-name">Soldados de Cristo</p><h3>Caballeros</h3><p>Hombres creciendo en carácter, fe y servicio.</p></article>
+        <article><span>02</span><div class="ministry-icon">✦</div><p class="ministry-name">Mujeres Bendecidas</p><h3>Damas</h3><p>Mujeres fortalecidas por la Palabra y la comunión.</p></article>
+        <article><span>03</span><div class="ministry-icon">↗</div><p class="ministry-name">Guerreros de la Fe</p><h3>Jóvenes</h3><p>Una generación que vive su fe con propósito.</p></article>
+        <article><span>04</span><div class="ministry-icon">●</div><p class="ministry-name">Niños para Cristo</p><h3>Niños</h3><p>Aprender de Jesús en un ambiente alegre y seguro.</p></article>
+        <article><span>05</span><div class="ministry-icon">♪</div><h3>Adoración</h3><p>Servir a Dios con música, excelencia y un corazón sincero.</p></article>
+      </div>
+      <div class="section-action"><a class="button dark" href="ministerios.html">Explorar todos los ministerios <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="gallery section" id="galeria">
+      <div class="section-heading light">
+        <div><p class="section-kicker">Nuestra familia en acción</p><h2>Vida en comunidad</h2></div>
+        <p>Momentos reales de adoración, enseñanza, comunión y servicio entre generaciones.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-wide"><img src="ministerio-adoracion.jpg" alt="Culto de adoración de Misión Cristiana Camino al Cielo"><figcaption><strong>Adoración</strong><span>Celebramos juntos la presencia de Dios.</span></figcaption></figure>
+        <figure><img src="ministerio-caballeros.jpg" alt="Reunión del ministerio de caballeros"><figcaption><strong>Soldados de Cristo</strong><span>Caballeros creciendo en fe y servicio.</span></figcaption></figure>
+        <figure><img src="ministerio-damas.jpg" alt="Reunión del ministerio de damas"><figcaption><strong>Mujeres Bendecidas</strong><span>Comunión, enseñanza y propósito.</span></figcaption></figure>
+        <figure class="gallery-wide"><img src="ministerio-jovenes.jpg" alt="Reunión del ministerio de jóvenes"><figcaption><strong>Guerreros de la Fe</strong><span>Una generación que sigue a Jesús.</span></figcaption></figure>
+      </div>
+      <div class="section-action"><a class="button primary" href="galeria.html">Ver la galería completa <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="location section" id="ubicacion">
+      <div class="location-card">
+        <div class="location-copy">
+          <p class="section-kicker">Te esperamos</p>
+          <h2>Ven y camina<br>con nosotros.</h2>
+          <div class="address"><span aria-hidden="true">⌖</span><div><strong>35 y Colombia (esquina)</strong><p>Guayaquil, Ecuador</p></div></div>
+          <a class="button primary" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="church-photo" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener" aria-label="Ver la ubicación de la iglesia en Google Maps">
+          <img src="fachada-iglesia.png" alt="Fachada de Misión Cristiana Camino al Cielo">
+          <span class="photo-caption"><strong>Esta es nuestra casa</strong><small>Ver ubicación en Google Maps ↗</small></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand"><img class="official-logo footer-logo" src="logo-camino-al-cielo.png" alt="Logo de Misión Cristiana Camino al Cielo"><h2>Misión Cristiana<br><em>Camino al Cielo</em></h2></div>
+      <div><h3>Visítanos</h3><p>35 y Colombia (esquina)<br>Guayaquil, Ecuador</p><a href="#horarios">Ver horarios</a></div>
+      <div><h3>Conversemos</h3><a href="mailto:mc_camino_al_cielo@hotmail.com">mc_camino_al_cielo@hotmail.com</a></div>
+      <div><h3>Síguenos</h3><a href="https://www.facebook.com/misioncristianacaminoalcielo" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.instagram.com/mc.camino.al.cielo/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@MCCaminoAlCielo" target="_blank" rel="noopener">YouTube ↗</a></div>
+    </div>
+    <div class="footer-bottom"><p>Una familia unida, una iglesia unida.</p><p>© <span id="year"></span> Misión Cristiana Camino al Cielo</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
