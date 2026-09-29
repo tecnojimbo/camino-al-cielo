@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071a3f'/%3E%3Cpath d='M32 10v40M20 22h24' stroke='%23eabf67' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260929-3">
+  <link rel="stylesheet" href="styles.css?v=20260929-4">
 </head>
 <body>
   <header class="site-header" id="inicio">
@@ -65,11 +65,17 @@
     <section class="church-verse" id="lema" aria-labelledby="lema-title">
       <div class="verse-glow" aria-hidden="true"></div>
       <div class="verse-inner reveal">
-        <div class="verse-emblem">
-          <p>Una iglesia de</p>
-          <div class="emblem-words" aria-label="Fe, amor y esperanza">
-            <strong>FE</strong><i>•</i><strong>AMOR</strong><i>•</i><strong>ESPERANZA</strong>
+        <div class="verse-values" aria-label="Una iglesia de fe, amor y esperanza">
+          <div class="values-heading">
+            <span class="values-cross" aria-hidden="true"></span>
+            <p>Una iglesia de</p>
           </div>
+          <div class="values-list">
+            <span class="value-item value-faith"><small>01</small><strong>Fe</strong></span>
+            <span class="value-item value-love"><small>02</small><strong>Amor</strong></span>
+            <span class="value-item value-hope"><small>03</small><strong>Esperanza</strong></span>
+          </div>
+          <p class="values-caption">Una familia unida, una iglesia unida.</p>
         </div>
         <figure class="verse-quote">
           <span class="verse-mark" aria-hidden="true">“</span>
@@ -176,6 +182,6 @@
     </div>
     <div class="footer-bottom"><p>Una familia unida, una iglesia unida.</p><p>© <span id="year"></span> Misión Cristiana Camino al Cielo</p></div>
   </footer>
-  <script src="script.js?v=20260929-3"></script>
+  <script src="script.js?v=20260929-4"></script>
 </body>
 </html>
