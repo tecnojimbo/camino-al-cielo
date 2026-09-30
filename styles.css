@@ -68,6 +68,17 @@ html{overflow-x:hidden}body{overflow-x:hidden;min-width:280px}main,section,artic
 @media(max-width:360px){.verse-emblem{padding-inline:8px}.emblem-words strong{font-size:clamp(1.05rem,7.3cqw,1.55rem)}.emblem-words i{font-size:.6rem}}
 
 /* Google Maps interactivo */
+.location-intro{max-width:390px;margin:18px 0 24px;color:var(--muted)}
+.location-switcher{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 24px}
+.location-option{position:relative;min-width:0;padding:16px 14px;text-align:left;border:1px solid #d7dfeb;border-radius:12px;color:var(--ink);background:#f7f9fc;cursor:pointer;transition:transform .2s,border-color .2s,background .2s,box-shadow .2s}
+.location-option:hover{transform:translateY(-2px);border-color:#9db5d4}
+.location-option.active{border-color:var(--blue);background:#edf5ff;box-shadow:0 8px 22px rgba(12,60,135,.11)}
+.location-option span,.location-option strong,.location-option small{display:block}
+.location-option span{margin-bottom:12px;color:var(--blue);font-size:.62rem;font-weight:700;letter-spacing:.12em}
+.location-option strong{font-family:var(--serif);font-size:1rem}
+.location-option small{margin-top:2px;color:var(--muted);font-size:.7rem}
+.location-status{display:block;margin-top:5px;color:#9a6a18;font-size:.7rem;font-weight:700}
+.location .address{margin:24px 0}
 .location-media{display:grid;grid-template-rows:minmax(390px,1fr) 220px;min-height:610px;background:#d7e3ee}
 .map-embed{position:relative;min-height:390px;overflow:hidden;background:#d7e3ee}
 .map-embed iframe{display:block;width:100%;height:100%;min-height:390px;border:0;filter:saturate(.88) contrast(1.03)}
@@ -76,7 +87,7 @@ html{overflow-x:hidden}body{overflow-x:hidden;min-width:280px}main,section,artic
 .location-church-photo{min-height:220px;border-top:5px solid #fff}
 .location-church-photo .photo-caption{bottom:20px}
 @media(max-width:1000px){.location-media{grid-template-rows:minmax(410px,1fr) 260px}.map-embed,.map-embed iframe{min-height:410px}.location-church-photo{min-height:260px}}
-@media(max-width:600px){.location-media{grid-template-rows:350px 220px;min-height:570px}.map-embed,.map-embed iframe{min-height:350px}.location-church-photo{min-height:220px}.map-open{right:12px;bottom:12px;padding:10px 13px}}
+@media(max-width:600px){.location-switcher{grid-template-columns:1fr}.location-option{padding:14px 16px}.location-option span{margin-bottom:6px}.location-media{grid-template-rows:350px 220px;min-height:570px}.map-embed,.map-embed iframe{min-height:350px}.location-church-photo{min-height:220px}.map-open{right:12px;bottom:12px;padding:10px 13px}}
 
 /* Próximo culto */
 .next-service{padding-top:86px;padding-bottom:86px;background:linear-gradient(180deg,#f7f4ed 0%,#eef4fa 100%)}

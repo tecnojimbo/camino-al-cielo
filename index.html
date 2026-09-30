@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071a3f'/%3E%3Cpath d='M32 10v40M20 22h24' stroke='%23eabf67' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260930-2">
+  <link rel="stylesheet" href="styles.css?v=20260930-3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -261,14 +261,19 @@
       <div class="location-card">
         <div class="location-copy">
           <p class="section-kicker">Te esperamos</p>
-          <h2>Ven y camina<br>con nosotros.</h2>
-          <div class="address"><span aria-hidden="true">⌖</span><div><strong>35 y Colombia (esquina)</strong><p>Guayaquil, Ecuador</p></div></div>
-          <a class="button primary" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+          <h2>Encuentra la sede<br>más cercana.</h2>
+          <p class="location-intro">Selecciona una sede para verla directamente en el mapa.</p>
+          <div class="location-switcher" role="group" aria-label="Seleccionar sede de la iglesia">
+            <button class="location-option active" type="button" data-location="guayaquil" aria-pressed="true"><span>01</span><strong>Guayaquil</strong><small>35 y Colombia</small></button>
+            <button class="location-option" type="button" data-location="chongon" aria-pressed="false"><span>02</span><strong>Chongón</strong><small>Super Éxito</small></button>
+          </div>
+          <div class="address"><span aria-hidden="true">⌖</span><div><strong data-location-address>35 y Colombia (esquina)</strong><p data-location-city>Guayaquil, Ecuador</p><small class="location-status" data-location-status></small></div></div>
+          <a class="button primary" data-location-link href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
         </div>
         <div class="location-media">
           <div class="map-embed">
-            <iframe title="Ubicación de Misión Cristiana Camino al Cielo en Google Maps" src="https://www.google.com/maps?q=Mision+Cristiana+Camino+al+Cielo%2C+R329%2B3JH%2C+090415+Guayaquil%2C+Ecuador&amp;output=embed&amp;hl=es" width="800" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            <a class="map-open" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Abrir mapa completo <span aria-hidden="true">↗</span></a>
+            <iframe data-location-map title="Ubicación de la sede Guayaquil de Misión Cristiana Camino al Cielo en Google Maps" src="https://www.google.com/maps?q=Mision+Cristiana+Camino+al+Cielo%2C+R329%2B3JH%2C+090415+Guayaquil%2C+Ecuador&amp;output=embed&amp;hl=es" width="800" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <a class="map-open" data-location-map-link href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Abrir mapa completo <span aria-hidden="true">↗</span></a>
           </div>
           <a class="church-photo location-church-photo" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener" aria-label="Ver la ubicación de la iglesia en Google Maps">
             <img src="fachada-iglesia.webp" alt="Fachada de Misión Cristiana Camino al Cielo" width="1536" height="1024" loading="lazy" decoding="async">
@@ -282,12 +287,12 @@
   <footer>
     <div class="footer-main">
       <div class="footer-brand"><img class="official-logo footer-logo" src="logo-camino-al-cielo.webp" alt="Logo de Misión Cristiana Camino al Cielo" width="500" height="400" loading="lazy" decoding="async"><h2>Misión Cristiana<br><em>Camino al Cielo</em></h2></div>
-      <div><h3>Visítanos</h3><p>35 y Colombia (esquina)<br>Guayaquil, Ecuador</p><a href="#horarios">Ver horarios</a></div>
+      <div><h3>Visítanos</h3><p>Sedes en Guayaquil y Chongón</p><a href="#ubicacion">Ver ubicaciones</a><a href="#horarios">Ver horarios</a></div>
       <div><h3>Conversemos</h3><a href="mailto:mc_camino_al_cielo@hotmail.com">mc_camino_al_cielo@hotmail.com</a></div>
       <div><h3>Síguenos</h3><a href="https://www.facebook.com/misioncristianacaminoalcielo" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.instagram.com/mc.camino.al.cielo/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@MCCaminoAlCielo" target="_blank" rel="noopener">YouTube ↗</a></div>
     </div>
     <div class="footer-bottom"><p>Una familia unida, una iglesia unida.</p><p>© <span id="year"></span> Misión Cristiana Camino al Cielo</p></div>
   </footer>
-  <script src="script.js?v=20260930-1"></script>
+  <script src="script.js?v=20260930-2"></script>
 </body>
 </html>
