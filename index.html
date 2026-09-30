@@ -10,7 +10,81 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071a3f'/%3E%3Cpath d='M32 10v40M20 22h24' stroke='%23eabf67' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260929-5">
+  <link rel="stylesheet" href="styles.css?v=20260930-1">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Church",
+        "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia",
+        "name": "Misión Cristiana Camino al Cielo",
+        "url": "https://tecnojimbo.github.io/camino-al-cielo/",
+        "logo": "https://tecnojimbo.github.io/camino-al-cielo/logo-camino-al-cielo.webp",
+        "image": "https://tecnojimbo.github.io/camino-al-cielo/fachada-iglesia.webp",
+        "slogan": "Una familia unida, una iglesia unida",
+        "email": "mailto:mc_camino_al_cielo@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "35 y Colombia (Esquina)",
+          "addressLocality": "Guayaquil",
+          "postalCode": "090415",
+          "addressCountry": "EC"
+        },
+        "hasMap": "https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8",
+        "sameAs": [
+          "https://www.facebook.com/misioncristianacaminoalcielo",
+          "https://www.instagram.com/mc.camino.al.cielo/",
+          "https://www.youtube.com/@MCCaminoAlCielo"
+        ]
+      },
+      {
+        "@type": "Event",
+        "@id": "https://tecnojimbo.github.io/camino-al-cielo/#oracion",
+        "name": "Tiempo de Oración",
+        "description": "Reunión de oración de Misión Cristiana Camino al Cielo.",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "organizer": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "eventSchedule": [
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Monday", "startTime": "08:00", "endTime": "09:30", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Wednesday", "startTime": "08:00", "endTime": "09:30", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Friday", "startTime": "08:00", "endTime": "09:30", "scheduleTimezone": "America/Guayaquil" }
+        ]
+      },
+      {
+        "@type": "Event",
+        "@id": "https://tecnojimbo.github.io/camino-al-cielo/#culto-devocional",
+        "name": "Culto Devocional",
+        "description": "Culto dominical de Misión Cristiana Camino al Cielo.",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "organizer": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "eventSchedule": [
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Sunday", "startTime": "09:00", "endTime": "10:30", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Sunday", "startTime": "11:00", "endTime": "12:30", "scheduleTimezone": "America/Guayaquil" }
+        ]
+      },
+      {
+        "@type": "Event",
+        "@id": "https://tecnojimbo.github.io/camino-al-cielo/#reuniones-semanales",
+        "name": "Reuniones semanales y ministerios",
+        "description": "Encuentros de crecimiento cristiano, testimonio y oración, y ministerios de caballeros, damas, jóvenes y niños.",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "organizer": { "@id": "https://tecnojimbo.github.io/camino-al-cielo/#iglesia" },
+        "eventSchedule": [
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Monday", "startTime": "20:00", "endTime": "21:00", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Wednesday", "startTime": "20:00", "endTime": "21:30", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Thursday", "startTime": "17:00", "endTime": "18:00", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Friday", "startTime": "20:00", "endTime": "21:30", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Saturday", "startTime": "14:30", "endTime": "16:00", "scheduleTimezone": "America/Guayaquil" },
+          { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Saturday", "startTime": "18:30", "endTime": "20:30", "scheduleTimezone": "America/Guayaquil" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header" id="inicio">
@@ -49,6 +123,32 @@
       <a href="ministerios.html"><span>03</span><div><strong>Ministerios</strong><small>Encuentra tu lugar</small></div><b aria-hidden="true">→</b></a>
       <a href="galeria.html"><span>04</span><div><strong>Galería</strong><small>Conoce la comunidad</small></div><b aria-hidden="true">→</b></a>
     </nav>
+
+    <section class="next-service section" id="proximo-culto" aria-labelledby="next-service-title">
+      <div class="next-service-card">
+        <div class="next-service-copy">
+          <p class="section-kicker">Nos reunimos pronto</p>
+          <h2 id="next-service-title">Próximo culto</h2>
+          <p class="next-service-name" data-next-service-name aria-live="polite">Consultando el horario…</p>
+          <p class="next-service-date" data-next-service-date>Hora de Guayaquil</p>
+          <div class="next-service-actions">
+            <a class="button primary" href="#horarios">Ver todos los horarios</a>
+            <a class="button ghost" href="https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="countdown-panel" aria-label="Cuenta regresiva para el próximo culto">
+          <p>Comenzamos en</p>
+          <div class="countdown-grid" aria-hidden="true">
+            <span><strong data-countdown-days>00</strong><small>Días</small></span>
+            <span><strong data-countdown-hours>00</strong><small>Horas</small></span>
+            <span><strong data-countdown-minutes>00</strong><small>Minutos</small></span>
+            <span><strong data-countdown-seconds>00</strong><small>Segundos</small></span>
+          </div>
+          <p class="sr-only" data-countdown-accessible aria-live="polite"></p>
+          <p class="countdown-zone"><span aria-hidden="true">●</span> Hora local de Guayaquil</p>
+        </div>
+      </div>
+    </section>
 
     <section class="welcome section" id="nosotros">
       <div class="section-kicker">Una comunidad para ti</div>
@@ -182,6 +282,6 @@
     </div>
     <div class="footer-bottom"><p>Una familia unida, una iglesia unida.</p><p>© <span id="year"></span> Misión Cristiana Camino al Cielo</p></div>
   </footer>
-  <script src="script.js?v=20260929-5"></script>
+  <script src="script.js?v=20260930-1"></script>
 </body>
 </html>
