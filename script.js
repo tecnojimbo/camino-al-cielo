@@ -21,19 +21,27 @@ if(locationButtons.length){
   const locations={
     guayaquil:{
       label:'Guayaquil',
-      address:'35 y Colombia (esquina)',
-      city:'Guayaquil, Ecuador',
+      address:'Misión Cristiana Camino al Cielo Guayaquil',
+      city:'35 y Colombia (esquina) · Guayaquil, Ecuador',
       status:'',
       query:'Mision Cristiana Camino al Cielo, R329+3JH, 090415 Guayaquil, Ecuador',
-      link:'https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8'
+      link:'https://maps.app.goo.gl/MqLcbDUxTGVeMiTD8',
+      photo:'fachada-iglesia.webp',
+      photoAlt:'Fachada de la sede Guayaquil de Misión Cristiana Camino al Cielo',
+      photoTitle:'Esta es nuestra casa',
+      photoCaption:'35 y Colombia (esquina)'
     },
     chongon:{
       label:'Chongón',
-      address:'Super Éxito',
-      city:'Chongón, Guayaquil',
-      status:'Ubicación provisional',
-      query:'Chongon, Guayaquil, Ecuador',
-      link:'https://www.google.com/maps/search/?api=1&query=Chongon%2C+Guayaquil%2C+Ecuador'
+      address:'Misión Cristiana Camino al Cielo Chongón',
+      city:'QW37+9GH, Guayaquil, Ecuador',
+      status:'',
+      query:'-2.2465556,-80.0861389',
+      link:'https://maps.app.goo.gl/i6rm6wjLV7Azu1Dy7',
+      photo:'sede-chongon.webp',
+      photoAlt:'Fachada de la sede Chongón de Misión Cristiana Camino al Cielo',
+      photoTitle:'Sede Chongón',
+      photoCaption:'QW37+9GH, Chongón'
     }
   };
   const mapFrame=document.querySelector('[data-location-map]');
@@ -41,6 +49,10 @@ if(locationButtons.length){
   const cityLabel=document.querySelector('[data-location-city]');
   const statusLabel=document.querySelector('[data-location-status]');
   const mapLinks=[...document.querySelectorAll('[data-location-link],[data-location-map-link]')];
+  const photoLink=document.querySelector('[data-location-photo-link]');
+  const photo=document.querySelector('[data-location-photo]');
+  const photoTitle=document.querySelector('[data-location-photo-title]');
+  const photoCaption=document.querySelector('[data-location-photo-caption]');
   locationButtons.forEach(button=>button.addEventListener('click',()=>{
     const selected=locations[button.dataset.location];
     if(!selected)return;
@@ -53,6 +65,12 @@ if(locationButtons.length){
     cityLabel.textContent=selected.city;
     statusLabel.textContent=selected.status;
     mapLinks.forEach(link=>link.href=selected.link);
+    photoLink.href=selected.link;
+    photoLink.setAttribute('aria-label',`Ver la sede ${selected.label} en Google Maps`);
+    photo.src=selected.photo;
+    photo.alt=selected.photoAlt;
+    photoTitle.textContent=selected.photoTitle;
+    photoCaption.textContent=selected.photoCaption;
     mapFrame.title=`Ubicación de la sede ${selected.label} de Misión Cristiana Camino al Cielo en Google Maps`;
     mapFrame.src=`https://www.google.com/maps?q=${encodeURIComponent(selected.query)}&output=embed&hl=es`;
   }));
